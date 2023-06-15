@@ -37,7 +37,7 @@ const TotalProductos = () => {
           {/* <p>ID: {product.id}</p> */}
           <p>Titulo: {product.title}</p>
           <p>Categoría: {product.category}</p>
-          <p>Precio: {product.price}</p>
+          <p>Precio: ${product.price}</p>
           {/* <p>Descripción: {product.description}</p> */}
           <picture>
             <img src={product.image} alt={product.title} className='imagen-productos' />

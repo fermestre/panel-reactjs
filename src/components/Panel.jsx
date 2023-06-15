@@ -32,7 +32,7 @@ const Dashboard = () => {
   return (
     <article id="container">
 
-      <section className="dashboard">
+      <section className="panel">
         <h1>Panel AMCHAM</h1>
 
         {loading ? (
