@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+body {
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #9575DE;
+  background-image: url('/img/fondo.png');
+}
+
+h1 {
+  font-family: 'Kanit', sans-serif;
+  color: white;
+  font-size: 2rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.panel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #c90dbd;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.metrica {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #2B2730;
+  color: white;
+  
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+section .metrica {
+  width: 50%;
+}
+
+.metrica button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-family: 'Kanit', sans-serif;
+  font-size: 1rem;
+  background-color: #9575DE;
+}
+
+.metrica .product-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 40px;
+}
+
+.metrica .product-list .items {
+  border: white solid;
+  margin: 10px;
+}
+
+.total-prod {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #c9d6e7;
+  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 900px;
+  text-align: center;
+  border-radius: 5rem;
+}
+
+.imagen-productos {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 10px 10px;
+}
+
+@media (min-width: 768px) {
+  .metrica {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 878px) {
+  .metrica .product-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .metrica {
+    width: calc(33.333% - 1rem);
+  .total-prod {
+    width: calc(33.333% - 1rem);
+  }
+  }
+
+}
